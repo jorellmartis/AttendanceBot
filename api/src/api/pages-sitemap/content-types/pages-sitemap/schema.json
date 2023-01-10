@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages_sitemaps",
+  "info": {
+    "singularName": "pages-sitemap",
+    "pluralName": "pages-sitemaps",
+    "displayName": "Pages - Sitemap"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
