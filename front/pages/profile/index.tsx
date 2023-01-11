@@ -3,8 +3,8 @@ import { NextPage } from 'next'
 import Sidebar from '../../components/Sidebar'
 import {  PageBlock } from '../../styles/reusable/Wrappers'
 import PageBanner from '../../components/PageBanner'
-import PunchCard from '../../components/dashboard/PunchCard'
 import SearchBar from '../../components/SearchBar'
+
 
 
 type Props = {
@@ -14,11 +14,10 @@ type Props = {
 type UserPageWithLayout = NextPage<Props> & {
   getLayout: (page: ReactElement) => ReactElement;
 }
-const Index : UserPageWithLayout = ({pageID}) => {
+const Index : UserPageWithLayout = ({}) => {
   return (
     <PageBlock>
       <PageBanner/>
-      <PunchCard/>
     </PageBlock>
   )
 }

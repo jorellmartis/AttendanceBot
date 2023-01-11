@@ -5,7 +5,8 @@ import {  PageBlock } from '../styles/reusable/Wrappers'
 import PageBanner from '../components/PageBanner'
 import PunchCard from '../components/dashboard/PunchCard'
 import SearchBar from '../components/SearchBar'
-
+import Overview from '../components/dashboard/Overview'
+import DasboardComponents from '../components/dashboard/DasboardComponents'
 
 type Props = {
   pageID: string
@@ -18,7 +19,9 @@ const Index : UserPageWithLayout = ({}) => {
   return (
     <PageBlock>
       <PageBanner/>
+      <Overview/>
       <PunchCard/>
+      <DasboardComponents/>
     </PageBlock>
   )
 }
